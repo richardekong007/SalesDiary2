@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sales Diary</string>
+    <array name="spinner_items">
+        <item>Help</item>
+        <item>Logout</item>
+    </array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@mipmap/background"
+    android:overScrollMode="always"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="16"
+            android:columnCount="5" android:layout_gravity="center">
+            <Space android:layout_column="1" android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_row="1" android:layout_columnSpan="3"/>
+
+            <TextView android:layout_column="2" android:layout_row="1"
+                android:text="Date" android:textSize="30dp"
+                android:textColor="#fff" android:textStyle="bold" />
+
+            <TextView android:id="@+id/date" android:layout_column="3" android:layout_row="1"
+             android:textSize="30dp"
+            android:textColor="#fff"  />
+            <Space android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_column="1" android:layout_row="2"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_row="3" android:layout_column="2" android:text="Product code:" android:textStyle="bold"
+                android:textColor="#fff" android:textSize="30dp"/>
+            <TextView android:layout_row="3" android:layout_column="3" android:id="@+id/productCode"
+                android:layout_width="160dp" android:layout_height="30dp"/>
+
+            <Space android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_column="1" android:layout_row="4"/>
+            <TextView
+                android:layout_column="2"
+                android:layout_row="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Code"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <ToggleButton
+                android:id="@+id/scanswitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_row="4"
+                android:background="#f50"
+                android:text="Scan Product UPC"
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_row="5" android:layout_column="2" android:text="Product Name:" android:textStyle="bold"
+                android:textColor="#fff" android:textSize="30dp"/>
+            <EditText android:layout_row="5" android:layout_column="3" android:id="@+id/productName"
+                android:layout_width="160dp" android:layout_height="40dp" android:background="#fff"
+                android:hint="productCatalog description"/>
+            <Space android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_column="1" android:layout_row="6"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_row="7" android:layout_column="2" android:text="Quantity:" android:textStyle="bold"
+                android:textColor="#fff" android:textSize="30dp"/>
+            <EditText android:layout_row="7" android:layout_column="3" android:id="@+id/quantity"
+                android:layout_width="160dp" android:layout_height="40dp" android:background="#fff"
+                android:hint="quantity"/>
+            <Space android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_column="1" android:layout_row="8"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_row="9" android:layout_column="2" android:text="Price:" android:textStyle="bold"
+                android:textColor="#fff" android:textSize="30dp"/>
+            <EditText android:layout_row="9" android:layout_column="3" android:id="@+id/salesPrice"
+                android:layout_width="160dp" android:layout_height="40dp" android:background="#fff"
+                android:hint="salesPrice"/>
+            <Space android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_column="1" android:layout_row="10"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_row="11" android:layout_column="2" android:text="Description:" android:textStyle="bold"
+                android:textColor="#fff" android:textSize="30dp"/>
+            <ImageButton android:layout_row="11" android:layout_column="3" android:id="@+id/imageDesc"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@mipmap/camera"  />
+            <ImageView android:id="@+id/productImage" android:layout_row="12" android:layout_column="3"
+                android:layout_width="60dp" android:layout_height="60dp"/>
+            <Space android:layout_width="wrap_content" android:layout_height="30dp"
+                android:layout_column="1" android:layout_row="12"/>
+            <Button android:id="@+id/addRecord" android:text="Add Record" android:layout_row="13" android:layout_column="3"
+                android:textColor="#005"/>
+
+        </GridLayout>
+    </ScrollView>
+
